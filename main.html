@@ -1,0 +1,90 @@
+<html>
+    <meta charset= "UTF- 8">
+    <title>CRUDS </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>Store Management System</h2>
+        </div>
+
+
+        <div class="inputs">
+            <input placeholder="title" type="text" id="title">
+            <div class="price">
+                <input onkeyup="gettotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes rate in (%)">
+                <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="gettotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input placeholder="count" type="number" id="count">
+            <input placeholder="category" type="text" id="category">
+            <button id="submit">create</button>
+
+        </div>
+
+
+        <div class="outputs">
+            <div class="searchblovk">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="getmood(this.id)" id="searchtitle">search by title</button>
+                    <button onclick="getmood(this.id)" id="searchcategory">search by category</button>
+                </div>
+
+            </div>
+            <div id="deleteall"></div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                <tbody id="tbody">
+                    <!--<tr>
+                        <td>1</td>
+                        <td>asdfghjkl</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>asdf</td>
+                        <td><button id="update">update</button></td>
+                        <td><button id="delete">delete</button></td>
+                    </tr> 
+                    <tr>
+                        <td>2</td>
+                        <td>zzzzzzl</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>200</td>
+                        <td>200</td>
+                        <td>200</td>
+                        <td>zxcv</td>
+                        <td><button id="update">update</button></td>
+                        <td><button id="delete">delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
